@@ -1,0 +1,515 @@
+[
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "virtual_machine",
+    "provider": "google",
+    "region": "europe-west1",
+    "instance_type": "n2d-standard-8",
+    "running_hours": "720",
+    "cpu_count": 8,
+    "memory_gb": 32,
+    "cpu_utilization": "50.0",
+    "cpu_type": "AMD_EPYC_3RD_GEN"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  },
+  {
+    "class": "volume",
+    "provider": "google",
+    "region": "europe-west1",
+    "running_hours": "720",
+    "volume_gb": "3026",
+    "volume_type": "ssd"
+  }
+]
