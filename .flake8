@@ -1,0 +1,73 @@
+[flake8]
+max-line-length = 125
+extend-ignore =
+  # Max line length
+  E501,
+  # Whitespace before ':' (in accordance with Black)
+  E203,
+  # Missing whitespace after ',' (in accordance with Black)
+  E231,
+  # bare-except
+  E722,
+  # Continuation line unaligned for hanging indent
+  E131,
+  # flake8-pytest-style
+  # A flake8 plugin checking common style issues or inconsistencies with pytest-based tests.
+  # Go to the following link to check the current errors reported:
+  # https://github.com/m-burst/flake8-pytest-style
+  # use @pytest.fixture() over @pytest.fixture
+  PT001,
+  # configuration for fixture '{name}' specified via positional args, use kwargs
+  PT002,
+  # scope='function' is implied in @pytest.fixture()
+  PT003,
+  # fixture '{name}' does not return anything, add leading underscore
+  PT004,
+  # fixture '{name}' returns a value, remove leading underscore
+  PT005,
+  # wrong name(s) type in @pytest.mark.parametrize, expected {expected_type}
+  PT006,
+  # wrong values type in @pytest.mark.parametrize, expected {expected_type}
+  PT007,
+  # use return_value= instead of patching with lambda
+  PT008,
+  # use a regular assert instead of unittest-style '{assertion}'
+  PT009,
+  # set the expected exception in pytest.raises()
+  PT010,
+  # pytest.raises({exception}) is too broad, set the match parameter or use a more specific exception
+  PT011,
+  # pytest.raises() block should contain a single simple statement
+  PT012,
+  # found incorrect import of pytest, use simple 'import pytest' instead
+  PT013,
+  # found duplicate test cases {indexes} in @pytest.mark.parametrize
+  ; PT014,
+  # assertion always fails, replace with pytest.fail()
+  PT015,
+  # no message passed to pytest.fail()
+  PT016,
+  # found assertion on exception {name} in except block, use pytest.raises() instead
+  PT017,
+  # assertion should be broken down into multiple parts
+  PT018,
+  # fixture {name} without value is injected as parameter, use @pytest.mark.usefixtures instead
+  PT019,
+  # @pytest.yield_fixture is deprecated, use @pytest.fixture
+  PT020,
+  # use yield instead of request.addfinalizer
+  PT021,
+  # no teardown in fixture {name}, use return instead of yield
+  PT022,
+  # use @pytest.mark.foo() over @pytest.mark.foo
+  PT023,
+  # pytest.mark.asyncio is unnecessary for fixtures
+  PT024,
+  # pytest.mark.usefixtures has no effect on fixtures
+  PT025,
+  # useless pytest.mark.usefixtures without parameters
+  PT026,
+  # use pytest.raises() instead of unittest-style 'assertRaises'
+  PT027,
+
+ban-relative-imports = parents
