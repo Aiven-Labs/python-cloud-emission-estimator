@@ -36,8 +36,8 @@ CARBON_INTENSITY_GRAMS_PER_KWH = {
         "default": Decimal("392.78188"),  # Average of the above regions
     },
 
-    "google": {
-        # google numbers are sourced from here:
+    "gcp": {
+        # Google Cloud Platform numbers are sourced from here:
         #  https://cloud.google.com/sustainability/region-carbon
         # note: we don't account for CFE% just yet
         "asia-east1": Decimal("453"),

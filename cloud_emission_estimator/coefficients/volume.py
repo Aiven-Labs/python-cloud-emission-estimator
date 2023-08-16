@@ -16,7 +16,7 @@ VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR = {
             "default": VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT * 2,  # Replication factor 2
         },
     },
-    "google": {
+    "gcp": {
         "ssd": {
             "default": VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT * 2,  # Replication factor 2
         }

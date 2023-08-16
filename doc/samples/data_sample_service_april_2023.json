@@ -1,7 +1,7 @@
 [
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -12,7 +12,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -23,7 +23,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -34,7 +34,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -45,7 +45,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -56,7 +56,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -67,7 +67,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -78,7 +78,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -89,7 +89,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -100,7 +100,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -111,7 +111,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -122,7 +122,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -133,7 +133,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -144,7 +144,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -155,7 +155,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -166,7 +166,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -177,7 +177,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -188,7 +188,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -199,7 +199,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -210,7 +210,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -221,7 +221,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -232,7 +232,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -243,7 +243,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -254,7 +254,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -265,7 +265,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -276,7 +276,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -287,7 +287,7 @@
   },
   {
     "class": "virtual_machine",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "instance_type": "n2d-standard-8",
     "running_hours": "720",
@@ -298,7 +298,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -306,7 +306,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -314,7 +314,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -322,7 +322,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -330,7 +330,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -338,7 +338,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -346,7 +346,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -354,7 +354,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -362,7 +362,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -370,7 +370,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -378,7 +378,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -386,7 +386,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -394,7 +394,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -402,7 +402,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -410,7 +410,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -418,7 +418,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -426,7 +426,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -434,7 +434,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -442,7 +442,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -450,7 +450,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -458,7 +458,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -466,7 +466,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -474,7 +474,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -482,7 +482,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -490,7 +490,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -498,7 +498,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
@@ -506,7 +506,7 @@
   },
   {
     "class": "volume",
-    "provider": "google",
+    "provider": "gcp",
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
