@@ -3,3 +3,5 @@
 .hypothesis/
 .mypy_cache/
 .pytest_cache/
+rpms/
+rpm-src-cloud-emission-estimator.tar
