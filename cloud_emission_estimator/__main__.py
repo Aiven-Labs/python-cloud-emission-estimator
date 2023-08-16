@@ -17,7 +17,7 @@ class json_encoder(json.JSONEncoder):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="Input file with utilization records")
-    parser.add_argument("--verbose", help="Verbose logging")
+    parser.add_argument("--verbose", action="store_true", help="Verbose logging")
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO)

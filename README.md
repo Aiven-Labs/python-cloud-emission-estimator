@@ -9,7 +9,7 @@ This tool is derived from [Cloud Carbon Footprint](https://github.com/cloud-carb
 You can run the commandline tool with an included sample as follows:
 
 ```
-$ python3 -m cloud_emission_estimator --input samples/data_sample_service_april_2023.json
+$ python3 -m cloud_emission_estimator --input doc/samples/data_sample_service_april_2023.json
 ```
 
 Or call the module programmatically as:

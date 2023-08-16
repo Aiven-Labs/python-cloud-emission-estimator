@@ -13,7 +13,7 @@ POWER_USAGE_EFFECTIVINESS = {
         "default": Decimal("1.135"),
     },
 
-    "google": {
+    "gcp": {
         "asia-east1": Decimal("1.12"),
         "asia-southeast1": Decimal("1.13"),
         "australia-southeast1": Decimal("1.10"),
