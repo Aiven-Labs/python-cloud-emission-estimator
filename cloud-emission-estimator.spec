@@ -30,6 +30,7 @@ BuildRequires:  python3-devel, python3-flake8, python3-mypy, python3-pytest
 cp -a cloud_emission_estimator %{buildroot}%{python3_sitelib}/
 
 %check
+make test-static
 make test
 
 %files -n python3-cloud-emission-estimator
