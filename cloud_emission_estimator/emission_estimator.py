@@ -8,6 +8,7 @@ from cloud_emission_estimator.coefficients.cpu import CPU_CONSUMPTION_MIN_WATTS,
 from cloud_emission_estimator.coefficients.memory import MEMORY_CONSUMPTION_WATTS_PER_GB_HOUR
 from cloud_emission_estimator.coefficients.pue import POWER_USAGE_EFFECTIVINESS
 from cloud_emission_estimator.coefficients.volume import VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR
+from cloud_emission_estimator.coefficients.gci import CARBON_INTENSITY_GRAMS_PER_KWH
 from decimal import Decimal
 from functools import cache
 
@@ -51,6 +52,29 @@ class EmissionEstimator:
         region = utilization_record.get("region")
 
         return self.lookup_pue_by_provider_and_region(provider=provider, region=region)
+
+    @cache
+    def lookup_gci_by_provider_and_region(self, *, provider: str, region: str) -> Decimal:
+        grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH["default"]["default"]
+
+        if provider in CARBON_INTENSITY_GRAMS_PER_KWH:
+            if region and region in CARBON_INTENSITY_GRAMS_PER_KWH:
+                grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH[provider][region]
+            elif "default" in CARBON_INTENSITY_GRAMS_PER_KWH[provider]:
+                grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH[provider]["default"]
+        elif provider:
+            self.log.warning("No carbon intensity figures found for provider %r", provider)
+
+        return grams_per_kwh
+
+    def lookup_gci(self, *, utilization_record: dict) -> Decimal | None:
+        provider = utilization_record.get("provider")
+        region = utilization_record.get("region")
+
+        if provider:
+            return self.lookup_gci_by_provider_and_region(provider=provider, region=region)
+        else:
+            return None
 
     def estimate_energy_consumption_cpu(self, *, utilization_record: dict) -> Decimal:
         # Energy consumption estimate for CPU consumption
@@ -124,6 +148,7 @@ class EmissionEstimator:
         report = {
             "total": {
                 "energy_wh": Decimal(0),
+                "co2eq_grams": Decimal(0),
             }
         }
 
@@ -131,9 +156,20 @@ class EmissionEstimator:
             energy_estimate = self.estimate_energy_consumption_for_utilization_record(utilization_record=utilization_record)
             report["total"]["energy_wh"] += energy_estimate
 
-        # convert units to kWh
+            grid_carbon_intensity = self.lookup_gci(utilization_record=utilization_record)
+            if grid_carbon_intensity:
+                report["total"]["co2eq_grams"] += energy_estimate / 1000 * grid_carbon_intensity
+
+        # convert units, energy usage into kWh and co2 emissions into metric tons co2eq
         for result_record in report.values():
-            energy_kwh = result_record.pop("energy_wh") / 1000
+            energy_wh = result_record.pop("energy_wh")
+            energy_kwh = energy_wh / 1000
             result_record["energy_kwh"] = energy_kwh.quantize(Decimal("0.00"))
+
+            co2eq_grams = result_record.pop("co2eq_grams")
+            if co2eq_grams > 0:
+                co2eq_kg = co2eq_grams / 1000
+                co2eq_mtons = co2eq_kg / 1000
+                result_record["co2eq_mtons"] = co2eq_mtons.quantize(Decimal("0.00"))
 
         return report
