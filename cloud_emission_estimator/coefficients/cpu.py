@@ -29,6 +29,8 @@ CPU_CONSUMPTION_MIN_WATTS = {
 
     "INTEL_BROADWELL_CLIENT": Decimal("0.71"),
     "INTEL_SKYLAKE_CLIENT": Decimal("1.82"),
+
+    "default": Decimal("0.74"),
 }
 
 CPU_CONSUMPTION_MAX_WATTS = {
@@ -48,4 +50,6 @@ CPU_CONSUMPTION_MAX_WATTS = {
 
     "INTEL_BROADWELL_CLIENT": Decimal("3.69"),
     "INTEL_SKYLAKE_CLIENT": Decimal("5.86"),
+
+    "default": Decimal("3.5"),
 }

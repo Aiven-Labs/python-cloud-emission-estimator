@@ -9,6 +9,7 @@ from cloud_emission_estimator.coefficients.memory import MEMORY_CONSUMPTION_WATT
 from cloud_emission_estimator.coefficients.pue import POWER_USAGE_EFFECTIVINESS
 from cloud_emission_estimator.coefficients.volume import VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR
 from cloud_emission_estimator.coefficients.gci import CARBON_INTENSITY_GRAMS_PER_KWH
+from cloud_emission_estimator.helpers import guess_cpu_type_by_instance_type
 from decimal import Decimal
 from functools import cache
 
@@ -85,8 +86,21 @@ class EmissionEstimator:
         #  number of cpus *
         #  running hours *
         #  power usage effeciviness
-        min_watts = CPU_CONSUMPTION_MIN_WATTS[utilization_record["cpu_type"]]
-        max_watts = CPU_CONSUMPTION_MAX_WATTS[utilization_record["cpu_type"]]
+
+        min_watts = CPU_CONSUMPTION_MIN_WATTS["default"]
+        max_watts = CPU_CONSUMPTION_MAX_WATTS["default"]
+
+        cpu_type = utilization_record.get("cpu_type")
+        if not cpu_type:
+            instance_type = utilization_record.get("instance_type")
+            provider = utilization_record.get("provider")
+            if provider and instance_type:
+                cpu_type = guess_cpu_type_by_instance_type(provider=provider, instance_type=instance_type)
+
+        if cpu_type:
+            min_watts = CPU_CONSUMPTION_MIN_WATTS.get(cpu_type, min_watts)
+            max_watts = CPU_CONSUMPTION_MAX_WATTS.get(cpu_type, max_watts)
+
         cpu_utilization = Decimal(utilization_record.get("cpu_utilization_pct", CPU_DEFAULT_UTILIZATION_PCT))
 
         pue = self.lookup_pue(utilization_record=utilization_record)
