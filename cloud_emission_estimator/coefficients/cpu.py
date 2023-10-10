@@ -11,7 +11,7 @@ from decimal import Decimal
 # Default CPU utilization
 CPU_DEFAULT_UTILIZATION_PCT = Decimal("50")
 
-# CPU power consumption, min/max watts per running hour
+# CPU power consumption, min/max watts
 CPU_CONSUMPTION_MIN_WATTS = {
     "ARM_NEOVERSE_N1": Decimal("1.06"),
 
