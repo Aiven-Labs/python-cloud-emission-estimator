@@ -5,9 +5,9 @@
 # This tool is derives from Cloud Carbon Footpring, https://github.com/cloud-carbon-footprint/cloud-carbon-footprint/
 
 from cloud_emission_estimator.coefficients.cpu import CPU_CONSUMPTION_MIN_WATTS, CPU_CONSUMPTION_MAX_WATTS, CPU_DEFAULT_UTILIZATION_PCT
-from cloud_emission_estimator.coefficients.memory import MEMORY_CONSUMPTION_WATTS_PER_GB_HOUR
+from cloud_emission_estimator.coefficients.memory import MEMORY_CONSUMPTION_WATTS_PER_GB
 from cloud_emission_estimator.coefficients.pue import POWER_USAGE_EFFECTIVINESS
-from cloud_emission_estimator.coefficients.volume import VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR
+from cloud_emission_estimator.coefficients.volume import VOLUME_CONSUMPTION_WATTS_PER_GB
 from cloud_emission_estimator.coefficients.gci import CARBON_INTENSITY_GRAMS_PER_KWH
 from cloud_emission_estimator.helpers import guess_cpu_type_by_instance_type
 from decimal import Decimal
@@ -36,17 +36,17 @@ class EmissionEstimator:
 
     @cache
     def lookup_volume_consumption_by_provider_region_and_type(self, *, provider: str, region: str, volume_type: str = "ssd") -> Decimal:
-        per_gb_hour_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR["default"][volume_type]["default"]
+        per_gb_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB["default"][volume_type]["default"]
 
-        if provider in VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR:
-            if region and region in VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR[provider][volume_type]:
-                per_gb_hour_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR[provider][volume_type][region]
-            elif "default" in VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR[provider][volume_type]:
-                per_gb_hour_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR[provider][volume_type]["default"]
+        if provider in VOLUME_CONSUMPTION_WATTS_PER_GB:
+            if region and region in VOLUME_CONSUMPTION_WATTS_PER_GB[provider][volume_type]:
+                per_gb_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB[provider][volume_type][region]
+            elif "default" in VOLUME_CONSUMPTION_WATTS_PER_GB[provider][volume_type]:
+                per_gb_consumption = VOLUME_CONSUMPTION_WATTS_PER_GB[provider][volume_type]["default"]
         elif provider:
             self.log.warning("No volume consumption factors found for provider %r", provider)
 
-        return per_gb_hour_consumption
+        return per_gb_consumption
 
     def lookup_pue(self, *, utilization_record: dict) -> Decimal:
         provider = utilization_record.get("provider")
@@ -82,7 +82,7 @@ class EmissionEstimator:
         # Result in Watt-hours
         #
         # Calculated as:
-        #  scaled watts per hour based on cpu utilization *
+        #  scaled watts based on cpu utilization *
         #  number of cpus *
         #  running hours *
         #  power usage effeciviness
@@ -118,7 +118,7 @@ class EmissionEstimator:
         pue = self.lookup_pue(utilization_record=utilization_record)
         return (
             Decimal(utilization_record["memory_gb"]) *
-            MEMORY_CONSUMPTION_WATTS_PER_GB_HOUR *
+            MEMORY_CONSUMPTION_WATTS_PER_GB *
             Decimal(utilization_record["running_hours"]) *
             pue
         )
@@ -131,7 +131,7 @@ class EmissionEstimator:
         provider = utilization_record.get("provider")
         region = utilization_record.get("region")
         volume_type = utilization_record.get("volume_type", "ssd")
-        per_gb_hour_consumption = self.lookup_volume_consumption_by_provider_region_and_type(
+        per_gb_consumption = self.lookup_volume_consumption_by_provider_region_and_type(
             provider=provider,
             region=region,
             volume_type=volume_type,
@@ -139,7 +139,7 @@ class EmissionEstimator:
 
         return (
             Decimal(utilization_record["volume_gb"]) *
-            per_gb_hour_consumption *
+            per_gb_consumption *
             Decimal(utilization_record["running_hours"]) *
             pue
         )

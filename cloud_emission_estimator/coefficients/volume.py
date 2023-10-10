@@ -8,22 +8,22 @@
 from decimal import Decimal
 
 
-VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT = Decimal("0.000392")
+VOLUME_CONSUMPTION_WATTS_PER_GB_SSD_DEFAULT = Decimal("0.000392")
 
-VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR = {
+VOLUME_CONSUMPTION_WATTS_PER_GB = {
     "aws": {
         "ssd": {
-            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT * 2,  # Replication factor 2
+            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_SSD_DEFAULT * 2,  # Replication factor 2
         },
     },
     "gcp": {
         "ssd": {
-            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT * 2,  # Replication factor 2
+            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_SSD_DEFAULT * 2,  # Replication factor 2
         }
     },
     "default": {
         "ssd": {
-            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_HOUR_SSD_DEFAULT,
+            "default": VOLUME_CONSUMPTION_WATTS_PER_GB_SSD_DEFAULT,
         }
     }
 }

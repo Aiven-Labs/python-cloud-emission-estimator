@@ -8,4 +8,4 @@
 from decimal import Decimal
 
 
-MEMORY_CONSUMPTION_WATTS_PER_GB_HOUR = Decimal("0.392")
+MEMORY_CONSUMPTION_WATTS_PER_GB = Decimal("0.392")
