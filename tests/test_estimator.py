@@ -106,3 +106,63 @@ def test_estimator_sample_records_grouping() -> None:
         found.add(group_name)
 
     assert found == {"compute", "storage"}
+
+
+def test_cgi_lookups() -> None:
+    estimator = EmissionEstimator()
+
+    gci_a = estimator.lookup_gci_by_provider_and_region(provider="aws", region="us-east-1")
+    gci_b = estimator.lookup_gci_by_provider_and_region(provider="aws", region="eu-north-1")
+
+    assert gci_a != gci_b
+
+    gci_a = estimator.lookup_gci_by_provider_and_region(provider="gcp", region="us-east1")
+    gci_b = estimator.lookup_gci_by_provider_and_region(provider="gcp", region="europe-north1")
+
+    assert gci_a != gci_b
+
+
+def test_gci_impact_between_regions() -> None:
+    sample_records_aws_us = [
+        {
+            "class": "virtual_machine",
+            "cpu_count": 16,
+            "cpu_type": "ARM_NEOVERSE_N1",
+            "running_hours": "7300",
+            "memory_gb": "128",
+            "provider": "aws",
+            "region": "us-east-1",
+        },
+        {
+            "class": "volume",
+            "volume_gb": 1024,
+            "volume_type": "ssd",
+            "running_hours": "7300",
+            "provider": "aws",
+            "region": "us-east-1",
+        },
+    ]
+    sample_records_aws_eu = [
+        {
+            "class": "virtual_machine",
+            "cpu_count": 16,
+            "cpu_type": "ARM_NEOVERSE_N1",
+            "running_hours": "7300",
+            "memory_gb": "128",
+            "provider": "aws",
+            "region": "eu-north-1",
+        },
+        {
+            "class": "volume",
+            "volume_gb": 1024,
+            "volume_type": "ssd",
+            "running_hours": "7300",
+            "provider": "aws",
+            "region": "eu-north-1",
+        },
+    ]
+
+    report_us = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records_aws_us)
+    report_eu = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records_aws_eu)
+    assert report_us["total"]["energy_kwh"] == report_eu["total"]["energy_kwh"]
+    assert report_us["total"]["co2eq_mtons"] != report_eu["total"]["co2eq_mtons"]
