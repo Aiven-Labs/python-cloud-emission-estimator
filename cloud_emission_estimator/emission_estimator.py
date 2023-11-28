@@ -60,7 +60,7 @@ class EmissionEstimator:
         grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH["default"]["default"]
 
         if provider in CARBON_INTENSITY_GRAMS_PER_KWH:
-            if region and region in CARBON_INTENSITY_GRAMS_PER_KWH:
+            if region and region in CARBON_INTENSITY_GRAMS_PER_KWH[provider]:
                 grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH[provider][region]
             elif "default" in CARBON_INTENSITY_GRAMS_PER_KWH[provider]:
                 grams_per_kwh = CARBON_INTENSITY_GRAMS_PER_KWH[provider]["default"]
