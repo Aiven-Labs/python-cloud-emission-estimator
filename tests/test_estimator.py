@@ -68,3 +68,41 @@ def test_estimator_sample_records() -> None:
 
     report = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records)
     assert report["total"]["energy_kwh"] > 0
+
+
+def test_estimator_sample_records_grouping() -> None:
+    sample_records = [
+        {
+            "class": "virtual_machine",
+            "cpu_count": 16,
+            "cpu_type": "INTEL_ICE_LAKE",
+            "running_hours": "24",
+            "memory_gb": "128",
+            "provider": "gcp",
+            "region": "europe-west-4",
+            "group": "compute",
+        },
+        {
+            "class": "volume",
+            "volume_gb": 1024,
+            "volume_type": "ssd",
+            "running_hours": "24",
+            "provider": "gcp",
+            "region": "europe-west-4",
+            "group": "storage",
+        },
+    ]
+
+    report = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records)
+    groups = report.get("groups")
+    assert groups is not None
+    assert len(groups) == 2
+
+    found = set()
+    for group in groups:
+        group_name = group.get("group_name")
+        assert group_name
+        assert group["energy_kwh"] > 0
+        found.add(group_name)
+
+    assert found == {"compute", "storage"}

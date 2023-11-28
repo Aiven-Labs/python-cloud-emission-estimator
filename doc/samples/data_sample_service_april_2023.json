@@ -8,7 +8,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -19,7 +20,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -30,7 +32,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -41,7 +44,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -52,7 +56,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -63,7 +68,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -74,7 +80,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -85,7 +92,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -96,7 +104,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -107,7 +116,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -118,7 +128,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -129,7 +140,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -140,7 +152,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -151,7 +164,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -162,7 +176,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -173,7 +188,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -184,7 +200,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -195,7 +212,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -206,7 +224,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -217,7 +236,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -228,7 +248,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -239,7 +260,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -250,7 +272,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -261,7 +284,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -272,7 +296,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -283,7 +308,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "virtual_machine",
@@ -294,7 +320,8 @@
     "cpu_count": 8,
     "memory_gb": 32,
     "cpu_utilization": "50.0",
-    "cpu_type": "AMD_EPYC_3RD_GEN"
+    "cpu_type": "AMD_EPYC_3RD_GEN",
+    "group": "compute"
   },
   {
     "class": "volume",
@@ -302,7 +329,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -310,7 +338,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -318,7 +347,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -326,7 +356,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -334,7 +365,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -342,7 +374,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -350,7 +383,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -358,7 +392,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -366,7 +401,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -374,7 +410,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -382,7 +419,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -390,7 +428,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -398,7 +437,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -406,7 +446,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -414,7 +455,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -422,7 +464,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -430,7 +473,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -438,7 +482,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -446,7 +491,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -454,7 +500,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -462,7 +509,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -470,7 +518,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -478,7 +527,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -486,7 +536,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -494,7 +545,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -502,7 +554,8 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   },
   {
     "class": "volume",
@@ -510,6 +563,7 @@
     "region": "europe-west1",
     "running_hours": "720",
     "volume_gb": "3026",
-    "volume_type": "ssd"
+    "volume_type": "ssd",
+    "group": "storage"
   }
 ]
