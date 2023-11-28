@@ -12,6 +12,7 @@ from cloud_emission_estimator.coefficients.gci import CARBON_INTENSITY_GRAMS_PER
 from cloud_emission_estimator.helpers import guess_cpu_type_by_instance_type
 from decimal import Decimal
 from functools import cache
+from typing import Any, Dict, List
 
 import logging
 
@@ -48,7 +49,7 @@ class EmissionEstimator:
 
         return per_gb_consumption
 
-    def lookup_pue(self, *, utilization_record: dict) -> Decimal:
+    def lookup_pue(self, *, utilization_record: Dict[str, Any]) -> Decimal:
         provider = utilization_record.get("provider")
         region = utilization_record.get("region")
 
@@ -68,7 +69,7 @@ class EmissionEstimator:
 
         return grams_per_kwh
 
-    def lookup_gci(self, *, utilization_record: dict) -> Decimal | None:
+    def lookup_gci(self, *, utilization_record: Dict[str, Any]) -> Decimal | None:
         provider = utilization_record.get("provider")
         region = utilization_record.get("region")
 
@@ -77,7 +78,7 @@ class EmissionEstimator:
         else:
             return None
 
-    def estimate_energy_consumption_cpu(self, *, utilization_record: dict) -> Decimal:
+    def estimate_energy_consumption_cpu(self, *, utilization_record: Dict[str, Any]) -> Decimal:
         # Energy consumption estimate for CPU consumption
         # Result in Watt-hours
         #
@@ -112,7 +113,7 @@ class EmissionEstimator:
             pue
         )
 
-    def estimate_energy_consumption_memory(self, *, utilization_record: dict) -> Decimal:
+    def estimate_energy_consumption_memory(self, *, utilization_record: Dict[str, Any]) -> Decimal:
         # Energy consumption estimate for memory usage
         # Result in Watt-hours
         pue = self.lookup_pue(utilization_record=utilization_record)
@@ -123,7 +124,7 @@ class EmissionEstimator:
             pue
         )
 
-    def estimate_energy_consumption_volume(self, *, utilization_record: dict) -> Decimal:
+    def estimate_energy_consumption_volume(self, *, utilization_record: Dict[str, Any]) -> Decimal:
         # Energy consumption estimate for memory usage
         # Result in Watt-hours
         pue = self.lookup_pue(utilization_record=utilization_record)
@@ -144,7 +145,7 @@ class EmissionEstimator:
             pue
         )
 
-    def estimate_energy_consumption_for_utilization_record(self, *, utilization_record: dict) -> Decimal:
+    def estimate_energy_consumption_for_utilization_record(self, *, utilization_record: Dict[str, Any]) -> Decimal:
         # Energy consumption estimate for a single record
         # Result in Watt-hours
         record_class = utilization_record.get("class")
@@ -158,8 +159,8 @@ class EmissionEstimator:
 
         return energy_estimate
 
-    def estimate_emissions(self, *, utilization_records: list[dict]) -> dict:
-        report = {
+    def estimate_emissions(self, *, utilization_records: List[Dict[str, Any]]) -> Dict[str, Any]:
+        buckets = {
             "total": {
                 "energy_wh": Decimal(0),
                 "co2eq_grams": Decimal(0),
@@ -167,23 +168,51 @@ class EmissionEstimator:
         }
 
         for utilization_record in utilization_records:
+            group_name = utilization_record.get("group")
+            if group_name:
+                if group_name == "total":
+                    group_name = None
+                elif group_name not in buckets:
+                    buckets[group_name] = {
+                        "energy_wh": Decimal(0),
+                        "co2eq_grams": Decimal(0),
+                    }
             energy_estimate = self.estimate_energy_consumption_for_utilization_record(utilization_record=utilization_record)
-            report["total"]["energy_wh"] += energy_estimate
+            buckets["total"]["energy_wh"] += energy_estimate
+            if group_name:
+                buckets[group_name]["energy_wh"] += energy_estimate
 
             grid_carbon_intensity = self.lookup_gci(utilization_record=utilization_record)
             if grid_carbon_intensity:
-                report["total"]["co2eq_grams"] += energy_estimate / 1000 * grid_carbon_intensity
+                buckets["total"]["co2eq_grams"] += energy_estimate / 1000 * grid_carbon_intensity
+                if group_name:
+                    buckets[group_name]["co2eq_grams"] += energy_estimate / 1000 * grid_carbon_intensity
+
+        report: Dict[str, Any] = {
+            "groups": []
+        }
 
         # convert units, energy usage into kWh and co2 emissions into metric tons co2eq
-        for result_record in report.values():
-            energy_wh = result_record.pop("energy_wh")
-            energy_kwh = energy_wh / 1000
-            result_record["energy_kwh"] = energy_kwh.quantize(Decimal("0.00"))
+        for group_name, result_record in buckets.items():
+            group_record: Dict[str, Decimal | str] = {}
 
-            co2eq_grams = result_record.pop("co2eq_grams")
+            energy_wh = result_record["energy_wh"]
+            energy_kwh = energy_wh / 1000
+            group_record["energy_kwh"] = energy_kwh.quantize(Decimal("0.00"))
+
+            co2eq_grams = result_record["co2eq_grams"]
             if co2eq_grams > 0:
                 co2eq_kg = co2eq_grams / 1000
                 co2eq_mtons = co2eq_kg / 1000
-                result_record["co2eq_mtons"] = co2eq_mtons.quantize(Decimal("0.00"))
+                group_record["co2eq_mtons"] = co2eq_mtons.quantize(Decimal("0.00"))
+
+            if group_name == "total":
+                report["total"] = group_record
+            else:
+                group_record["group_name"] = group_name
+                report["groups"].append(group_record)
+
+        if not report["groups"]:
+            report.pop("groups")
 
         return report
