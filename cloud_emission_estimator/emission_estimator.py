@@ -203,8 +203,7 @@ class EmissionEstimator:
             co2eq_grams = result_record["co2eq_grams"]
             if co2eq_grams > 0:
                 co2eq_kg = co2eq_grams / 1000
-                co2eq_mtons = co2eq_kg / 1000
-                group_record["co2eq_mtons"] = co2eq_mtons.quantize(Decimal("0.00"))
+                group_record["co2eq_kg"] = co2eq_kg.quantize(Decimal("0.00"))
 
             if group_name == "total":
                 report["total"] = group_record
