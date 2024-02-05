@@ -165,4 +165,4 @@ def test_gci_impact_between_regions() -> None:
     report_us = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records_aws_us)
     report_eu = cloud_emission_estimator.estimate_emissions(utilization_records=sample_records_aws_eu)
     assert report_us["total"]["energy_kwh"] == report_eu["total"]["energy_kwh"]
-    assert report_us["total"]["co2eq_mtons"] != report_eu["total"]["co2eq_mtons"]
+    assert report_us["total"]["co2eq_kg"] != report_eu["total"]["co2eq_kg"]
